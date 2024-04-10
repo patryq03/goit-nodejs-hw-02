@@ -9,6 +9,7 @@ const {
   updateStatusContact,
 } = require("./services");
 
+
 const contactSchema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().email().required(),
